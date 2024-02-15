@@ -120,15 +120,9 @@ const Body = () => {
     }
   })
 });
-        console.log(data)     
         res_json = await data.json()
 
-        console.log("HEREEE")
-        console.log(res_json)
-
         const restList = getResturantList(res_json)
-
-        console.log(restList)
         
         setlistOfRestuarants(restList);
         setFilteredRestaurant(restList);
